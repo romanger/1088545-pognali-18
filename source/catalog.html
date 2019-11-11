@@ -40,8 +40,70 @@
   <main class="page-main">
     <h1>Попутчики</h1>
     <section class="filters">
-      <div class="filters__by-country by-country"></div>
-      <div class="filters__by-travelmate by-travelmate">
+      <div class="filters__by-country by-country">
+        <div class="by-country__title-wrap">
+          <h2>Фильтрация по странам</h2>
+          <button class="by-country__open" type="button">Открыть фильтр</button>
+        </div>
+        <div class="by-country__wrap">
+          <ul class="by-country__list by-country__list--continents">
+            <li class="by-country__list-item by-country__list-item--active"><a href="#">Европа</a></li>
+            <li class="by-country__list-item"><a href="#">Азия</a></li>
+            <li class="by-country__list-item"><a href="#">Америка</a></li>
+            <li class="by-country__list-item"><a href="#">Острова</a></li>
+          </ul>
+          <table class="by-country__table">
+            <tr class="by-country__table-row">
+              <td class="by-country__table-cell"><a href="#">а</a></td>
+              <td class="by-country__table-cell"><a href="#">б</a></td>
+              <td class="by-country__table-cell"><a href="#">в</a></td>
+              <td class="by-country__table-cell"><a href="#">г</a></td>
+              <td class="by-country__table-cell"><a href="#">д</a></td>
+            </tr>
+            <tr class="by-country__table-row">
+              <td class="by-country__table-cell"><a href="#">е</a></td>
+              <td class="by-country__table-cell"><a href="#">з</a></td>
+              <td class="by-country__table-cell"><a href="#">и</a></td>
+              <td class="by-country__table-cell"><a href="#">к</a></td>
+              <td class="by-country__table-cell"><a href="#">л</a></td>
+            </tr>
+            <tr class="by-country__table-row">
+              <td class="by-country__table-cell"><a href="#">м</a></td>
+              <td class="by-country__table-cell"><a href="#">н</a></td>
+              <td class="by-country__table-cell"><a href="#">о</a></td>
+              <td class="by-country__table-cell"><a href="#">п</a></td>
+              <td class="by-country__table-cell"><a href="#">р</a></td>
+            </tr>
+            <tr class="by-country__table-row">
+              <td class="by-country__table-cell"><a href="#">с</a></td>
+              <td class="by-country__table-cell"><a href="#">т</a></td>
+              <td class="by-country__table-cell"><a href="#">у</a></td>
+              <td class="by-country__table-cell"><a href="#">ф</a></td>
+              <td class="by-country__table-cell"><a href="#">х</a></td>
+            </tr>
+            <tr class="by-country__table-row">
+              <td class="by-country__table-cell"><a href="#">ч</a></td>
+              <td class="by-country__table-cell"><a href="#">ш</a></td>
+              <td class="by-country__table-cell"><a href="#">э</a></td>
+              <td class="by-country__table-cell"><a href="#">ю</a></td>
+              <td class="by-country__table-cell"><a href="#">я</a></td>
+            </tr>
+          </table>
+          <ul class="by-country__list by-country__list--country-names">
+            <li class="by-country__list-item"><a href="#">Афганистан</a></li>
+            <li class="by-country__list-item"><a href="#">Албания</a></li>
+            <li class="by-country__list-item"><a href="#">Алжир</a></li>
+            <li class="by-country__list-item"><a href="#">Андорра</a></li>
+            <li class="by-country__list-item"><a href="#">Аргентина</a></li>
+            <li class="by-country__list-item"><a href="#">Армения</a></li>
+            <li class="by-country__list-item"><a href="#">Австралия</a></li>
+            <li class="by-country__list-item"><a href="#">Австрия</a></li>
+            <li class="by-country__list-item"><a href="#">Азербайджан</a></li>
+          </ul>
+          <button class="by-country__close" type="button">Свернуть</button>
+        </div>
+      </div>
+      <div class="filters__by-travelmate">
         <h2>Подберите идеального попутчика</h2>
         <form action="https://echo.htmlacademy.ru" method="POST" name="by-travelmate-form">
           <fieldset>
