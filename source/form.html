@@ -90,7 +90,60 @@
       </ol>
     </section>
     <section class="add-plan">
-
+      <h2 class="add-plan__title">Добавить план:</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="add-plan__steps form-steps">
+          <div class="form-steps__step">
+            <p class="form-steps__step-number">Шаг 1.</p>
+            <h3 class="form-steps__step-title">Даты пребывания</h3>
+            <p class="form-steps__step-instructions">Укажите предпочтительное количество попутчиков, которых
+              вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+            <div class="form-steps__field-wrap field-number">
+              <div class="field-number__wrap">
+                <label class="field-number__label" for="travelmates-number">ищу попутчиков:</label>
+                <span class="field-number__units">Чел.</span>
+              </div>
+              <div class="field-number__wrap">
+                <input class="field-number__input" type="number" value="2" name="travelmates-number"
+                  id="travelmates-number">
+                <button type="button" class="field-number__button field-number__button--minus">Минус</button>
+                <button type="button" class="field-number__button field-number__button--plus">Плюс</button>
+              </div>
+            </div>
+            <div class="form-steps__field-wrap field-number">
+              <div class="field-number__wrap">
+                <label class="field-number__label" for="days-number">Длительность:</label>
+                <span class="field-number__units">дн.</span>
+              </div>
+              <div class="field-number__wrap">
+                <input class="field-number__input" type="number" value="2" name="days-number" id="days-number">
+                <button type="button" class="field-number__button field-number__button--minus">Минус</button>
+                <button type="button" class="field-number__button field-number__button--plus">Плюс</button>
+              </div>
+            </div>
+            <div class="form-steps__field-wrap">
+              <input class="form-steps__checkbox" type="checkbox" name="" id="" checked><label class="form-steps__label"
+                for="">Можно с детьми</label>
+            </div>
+            <div class="form-steps__calendar-wrap">
+                <div class="calendar"></div>
+            </div>
+          </div>
+          <div class="form-steps__step">
+            <p class="form-steps__step-number">Шаг 2.</p>
+            <h3 class="form-steps__step-title">Маршрут</h3>
+            <p class="form-steps__step-instructions">Укажите страны, которые вы хотели по посетить. Это может быть одна
+              или сразу несколько.</p>
+          </div>
+          <div class="form-steps__step">
+            <p class="form-steps__step-number">Шаг 3.</p>
+            <h3 class="form-steps__step-title">Развлечения</h3>
+            <p class="form-steps__step-instructions">Наконец, расскажите о своих планах времяпровождения.
+              Можно писать в свободной форме и ставить тэги.
+            </p>
+          </div>
+        </div>
+      </form>
     </section>
   </main>
   <footer class="page-footer">
