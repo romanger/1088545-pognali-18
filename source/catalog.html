@@ -39,6 +39,86 @@
   </header>
   <main class="page-main">
     <h1>Попутчики</h1>
+    <section class="filters">
+      <div class="filters__by-country by-country"></div>
+      <div class="filters__by-travelmate by-travelmate">
+        <h2>Подберите идеального попутчика</h2>
+        <form action="https://echo.htmlacademy.ru" method="POST" name="by-travelmate-form">
+          <fieldset>
+            <legend>Хобби</legend>
+            <ul class="filters__list">
+              <li class="filters__list-item"><input class="filter__checkbox" type="checkbox" name="" id="zoj"><label
+                  for="zoj">ЗОЖ</label></li>
+              <li class="filters__list-item"><input class="filter__checkbox" type="checkbox" name="" id="surfing"><label
+                  for="surfing">Серфинг</label></li>
+              <li class="filters__list-item"><input class="filter__checkbox" type="checkbox" name="" id="cycling"><label
+                  for="cycling">Велосипед</label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Музыка</legend>
+            <ul class="filters__list">
+              <li class="filters__list-item"><input class="filter__checkbox" type="checkbox" name="" id="hardrock"
+                  checked><label for="hardrock">Тяжелый рок</label></li>
+              <li class="filters__list-item"><input class="filter__checkbox" type="checkbox" name=""
+                  id="russian-rap"><label for="russian-rap">Русский рэп</label></li>
+              <li class="filters__list-item"><input class="filter__checkbox" type="checkbox" name=""
+                  id="eurodance"><label for="eurodance">Евроденс</label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Еда</legend>
+            <ul class="filters__list">
+              <li class="filters__list-item"><input class="filter__checkbox" type="checkbox" name="" id="italian"><label
+                  for="italian">Итальянская</label></li>
+              <li class="filters__list-item"><input class="filter__checkbox" type="checkbox" name="" id="eastern"><label
+                  for="eastern">Восточная</label></li>
+              <li class="filters__list-item"><input class="filter__checkbox" type="checkbox" name="" id="sushi"><label
+                  for="sushi">Суши</label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Транспорт</legend>
+            <ul class="filters__transport-list transport-list transport-list--check">
+              <li class="transport-list__item">
+                <input class="transport-list__checkbox transport-list__checkbox--plane" type="checkbox" name="plane"
+                  id="plane">
+                <label for="plane">Самолет</label>
+              </li>
+              <li class="transport-list__item">
+                <input class="transport-list__checkbox transport-list__checkbox--bus" type="checkbox" name="bus"
+                  id="bus">
+                <label for="bus">Автобус</label>
+              </li>
+              <li class="transport-list__item">
+                <input class="transport-list__checkbox transport-list__checkbox--bike" type="checkbox" name="bike"
+                  id="bike">
+                <label for="bike">Велосипед</label>
+              </li>
+              <li class="transport-list__item">
+                <input class="transport-list__checkbox transport-list__checkbox--foot" type="checkbox" name="foot"
+                  id="foot">
+                <label for="foot">Пешком</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Левел</legend>
+            <ul class="filters__range">
+              <li>
+                <label class="filters__range-label" for="from">От</label>
+                <input class="filters__range-input--from" type="number" min="0" max="100" name="from" id="from">
+              </li>
+              <li>
+                <label class="filters__range-label" for="to">До</label>
+                <input class="filters__range-input--to" type="number" name="to" min="0" max="100" id="to">
+              </li>
+            </ul>
+          </fieldset>
+          <button class="filters__submit button" type="submit">Показать</button>
+        </form>
+      </div>
+    </section>
     <section class="travelmates">
       <ul class="travelmates__list">
         <li class="travelmates__list-item traveler-card">
@@ -95,10 +175,13 @@
           </ul>
           <p class="traveler-card__sub-title">транспорт:</p>
           <ul class="traveler-card__transport-list transport-list">
-            <li class="transport-list__item transport-list__item--plane transport-list__item--active" aria-selected="true">Самолет</li>
-            <li class="transport-list__item transport-list__item--bus transport-list__item--active" aria-selected="true">Автобус</li>
+            <li class="transport-list__item transport-list__item--plane transport-list__item--active"
+              aria-selected="true">Самолет</li>
+            <li class="transport-list__item transport-list__item--bus transport-list__item--active"
+              aria-selected="true">Автобус</li>
             <li class="transport-list__item transport-list__item--bike" aria-selected="false">Велосипед</li>
-            <li class="transport-list__item transport-list__item--foot transport-list__item--active" aria-selected="true">Пешком</li>
+            <li class="transport-list__item transport-list__item--foot transport-list__item--active"
+              aria-selected="true">Пешком</li>
           </ul>
           <p class="traveler-card__sub-title">левел:</p>
           <div class="traveler-card__level level-label--no-text">
@@ -128,9 +211,11 @@
           </ul>
           <p class="traveler-card__sub-title">транспорт:</p>
           <ul class="traveler-card__transport-list transport-list">
-            <li class="transport-list__item transport-list__item--plane transport-list__item--active" aria-selected="true">Самолет</li>
+            <li class="transport-list__item transport-list__item--plane transport-list__item--active"
+              aria-selected="true">Самолет</li>
             <li class="transport-list__item transport-list__item--bus" aria-selected="false">Автобус</li>
-            <li class="transport-list__item transport-list__item--bike transport-list__item--active" aria-selected="true">Велосипед</li>
+            <li class="transport-list__item transport-list__item--bike transport-list__item--active"
+              aria-selected="true">Велосипед</li>
             <li class="transport-list__item transport-list__item--foot" aria-selected="false">Пешком</li>
           </ul>
           <p class="traveler-card__sub-title">левел:</p>
@@ -159,8 +244,10 @@
           </ul>
           <p class="traveler-card__sub-title">транспорт:</p>
           <ul class="traveler-card__transport-list transport-list">
-            <li class="transport-list__item transport-list__item--plane transport-list__item--active" aria-selected="true">Самолет</li>
-            <li class="transport-list__item transport-list__item--bus transport-list__item--active" aria-selected="true">Автобус</li>
+            <li class="transport-list__item transport-list__item--plane transport-list__item--active"
+              aria-selected="true">Самолет</li>
+            <li class="transport-list__item transport-list__item--bus transport-list__item--active"
+              aria-selected="true">Автобус</li>
             <li class="transport-list__item transport-list__item--bike" aria-selected="false">Велосипед</li>
             <li class="transport-list__item transport-list__item--foot" aria-selected="false">Пешком</li>
           </ul>
