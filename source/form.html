@@ -38,13 +38,60 @@
     </nav>
   </header>
   <main class="page-main">
-      <header class="page-main__header">
-        <h1>Направления</h1>
-      </header>
-      <section class="profile">
+    <header class="page-main__header">
+      <h1>Направления</h1>
+    </header>
+    <section class="profile">
+      <h2 class="visually-hidden">Профиль</h2>
+      <p class="profile__picture">
+        <img src="https://via.placeholder.com/100x100" alt="Петя Демин фото" width="100" height="100"
+          class="profile__image">
+      </p>
+      <div class="profile__level level-label">
+        <p class="level-label__content">80<span class="level-label__text">level</span></p>
+      </div>
+      <button class="profile__button button" type="button">Сменить фото</button>
+      <div class="profile__tags">
+        <p class="profile__tags-title">Тэги</p>
+        <p class="profile__tags-content">#бургер #бар #футбол #концерт #крафт</p>
+      </div>
+      <div class="profile__transport">
+        <p class="profile__transport-list-title">Транспорт</p>
+        <ul class="profile__transport-list transport-list">
+          <li class="transport-list__item transport-list__item--plane transport-list__item--active"
+            aria-selected="true">Самолет</li>
+          <li class="transport-list__item  transport-list__item--bus transport-list__item--active" aria-selected="true">
+            Автобус</li>
+          <li class="transport-list__item transport-list__item--bike" aria-selected="false">Велосипед</li>
+          <li class="transport-list__item transport-list__item--foot transport-list__item--active" aria-selected="true">
+            Пешком</li>
+        </ul>
+      </div>
+    </section>
+    <section class="plans">
+      <h2>Мои планы:</h2>
+      <ol class="plans__list">
+        <li class="plans__list-item">
+          <p class="plans__title">Франция, Италия</p>
+          <p class="plans__content">
+            3 попутчика
+            <time datetime="2019-03-26P3D">26 мар — 29 мар</time>
+          </p>
+          <a class="plans__change" href="#">Изменить</a>
+        </li>
+        <li class="plans__list-item">
+          <p class="plans__title">Таиланд, Индонезия</p>
+          <p class="plans__content">
+            1 попутчик
+            <time datetime="2019-07-01P15D">1 июл — 15 июл</time>
+          </p>
+          <a class="plans__change" href="#">Изменить</a>
+        </li>
+      </ol>
+    </section>
+    <section class="add-plan">
 
-      </section>
-
+    </section>
   </main>
   <footer class="page-footer">
     <a class="page-footer__logo logo">
