@@ -210,7 +210,7 @@
                     <td class="calendar__dates-day">5</td>
                   </tr>
                 </table>
-                <button class="form-steps__button button">Следующий шаг</button>
+                <button class="form-steps__button form-steps__button--next button">Следующий шаг</button>
               </div>
             </div>
           </div>
@@ -219,6 +219,48 @@
             <h3 class="form-steps__step-title">Маршрут</h3>
             <p class="form-steps__step-instructions">Укажите страны, которые вы хотели по посетить. Это может быть одна
               или сразу несколько.</p>
+            <div class="country-select">
+              <div class="country-select__field field-dropdown__wrap">
+                <select class="field-dropdown__select" name="country-1" id="country-1">
+                  <option value="Босния и герцеговина">Выберите страну</option>
+                  <option value="Босния и герцеговина" selected>Босния и герцеговина</option>
+                  <option value="Босния и герцеговина">Чехия</option>
+                </select>
+                <div class="field-dropdown__flag">
+                  <img src="https://via.placeholder.com/100x19" alt="Босния и герцеговина флаг" width="35" height="24"
+                    class="field-dropdown__flag-image">
+                </div>
+                <button class="field-dropdown__remove">Удалить</button>
+              </div>
+              <div class="country-select__field field-dropdown__wrap">
+                <select class="field-dropdown__select" name="country-2" id="country-2">
+                  <option value="Босния и герцеговина">Выберите страну</option>
+                  <option value="Босния и герцеговина">Босния и герцеговина</option>
+                  <option value="Босния и герцеговина" selected>Чехия</option>
+                </select>
+                <div class="field-dropdown__flag">
+                  <img src="https://via.placeholder.com/100x19" alt="Чехия флаг" width="35" height="24"
+                    class="field-dropdown__flag-image">
+                </div>
+                <button class="field-dropdown__remove">Удалить</button>
+              </div>
+              <div class="country-select__field field-dropdown__wrap">
+                <select class="field-dropdown__select" name="country" id="country">
+                  <option value="Босния и герцеговина" selected>Выберите страну</option>
+                  <option value="Босния и герцеговина">Босния и герцеговина</option>
+                  <option value="Босния и герцеговина">Чехия</option>
+                </select>
+                <div class="field-dropdown__flag">
+                  <img src="https://via.placeholder.com/100x19" alt="Босния и герцеговина флаг" width="35" height="24"
+                    class="field-dropdown__flag-image">
+                </div>
+                <button class="field-dropdown__remove">Удалить</button>
+              </div>
+
+              <button class="country-select__add button">Добавить страну</button>
+            </div>
+            <button class="form-steps__button form-steps__button--next button">Следующий шаг</button>
+            <button class="form-steps__button form-steps__button--previous button">На шаг назад</button>
           </div>
           <div class="form-steps__step">
             <p class="form-steps__step-number">Шаг 3.</p>
