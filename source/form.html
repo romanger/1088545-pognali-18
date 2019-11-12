@@ -91,6 +91,13 @@
     </section>
     <section class="add-plan">
       <h2 class="add-plan__title">Добавить план:</h2>
+      <div class="add-plan__navigation">
+        <ul class="add-plan__navigation-list">
+          <li class="add-plan__navigation-item add-plan__navigation-item--active">Шаг 1</li>
+          <li class="add-plan__navigation-item">Шаг 2</li>
+          <li class="add-plan__navigation-item">Шаг 3</li>
+        </ul>
+      </div>
       <form action="https://echo.htmlacademy.ru" method="post">
         <div class="add-plan__steps form-steps">
           <div class="form-steps__step">
@@ -142,8 +149,8 @@
                     <li class="calendat__month-year-item">Ноябрь 2019</li>
                     <li class="calendat__month-year-item">Декабрь 2019</li>
                   </ul>
-                  <button class="calendar__next">Следующий</button>
-                  <button class="calendar__previous">Предыдущий</button>
+                  <button type="button" class="calendar__next">Следующий</button>
+                  <button type="button" class="calendar__previous">Предыдущий</button>
                 </div>
                 <table class="calendar__dates">
                   <tr class="calendar__dates-header">
@@ -210,7 +217,7 @@
                     <td class="calendar__dates-day">5</td>
                   </tr>
                 </table>
-                <button class="form-steps__button form-steps__button--next button">Следующий шаг</button>
+                <button type="button" class="form-steps__button form-steps__button--next button">Следующий шаг</button>
               </div>
             </div>
           </div>
@@ -227,10 +234,10 @@
                   <option value="Босния и герцеговина">Чехия</option>
                 </select>
                 <div class="field-dropdown__flag">
-                  <img src="https://via.placeholder.com/100x19" alt="Босния и герцеговина флаг" width="35" height="24"
+                  <img src="https://via.placeholder.com/35x24" alt="Босния и герцеговина флаг" width="35" height="24"
                     class="field-dropdown__flag-image">
                 </div>
-                <button class="field-dropdown__remove">Удалить</button>
+                <button type="button" class="field-dropdown__remove">Удалить</button>
               </div>
               <div class="country-select__field field-dropdown__wrap">
                 <select class="field-dropdown__select" name="country-2" id="country-2">
@@ -239,10 +246,10 @@
                   <option value="Босния и герцеговина" selected>Чехия</option>
                 </select>
                 <div class="field-dropdown__flag">
-                  <img src="https://via.placeholder.com/100x19" alt="Чехия флаг" width="35" height="24"
+                  <img src="https://via.placeholder.com/35x24" alt="Чехия флаг" width="35" height="24"
                     class="field-dropdown__flag-image">
                 </div>
-                <button class="field-dropdown__remove">Удалить</button>
+                <button type="button" class="field-dropdown__remove">Удалить</button>
               </div>
               <div class="country-select__field field-dropdown__wrap">
                 <select class="field-dropdown__select" name="country" id="country">
@@ -250,17 +257,13 @@
                   <option value="Босния и герцеговина">Босния и герцеговина</option>
                   <option value="Босния и герцеговина">Чехия</option>
                 </select>
-                <div class="field-dropdown__flag">
-                  <img src="https://via.placeholder.com/100x19" alt="Босния и герцеговина флаг" width="35" height="24"
-                    class="field-dropdown__flag-image">
-                </div>
-                <button class="field-dropdown__remove">Удалить</button>
+                <button type="button" class="field-dropdown__remove">Удалить</button>
               </div>
 
               <button class="country-select__add button">Добавить страну</button>
             </div>
-            <button class="form-steps__button form-steps__button--next button">Следующий шаг</button>
-            <button class="form-steps__button form-steps__button--previous button">На шаг назад</button>
+            <button type="button" class="form-steps__button form-steps__button--next button">Следующий шаг</button>
+            <button type="button" class="form-steps__button form-steps__button--previous button">На шаг назад</button>
           </div>
           <div class="form-steps__step">
             <p class="form-steps__step-number">Шаг 3.</p>
@@ -268,6 +271,27 @@
             <p class="form-steps__step-instructions">Наконец, расскажите о своих планах времяпровождения.
               Можно писать в свободной форме и ставить тэги.
             </p>
+            <ul class="field-entertainment">
+              <li class="field-entertainment__item">
+                <p>Босния и герцеговина</p>
+                <div class="field-entertainment__flag">
+                  <img class="field-entertainment__flag-image" src="https://via.placeholder.com/35x24"
+                    alt="Босния и герцеговина флаг">
+                </div>
+                <textarea name="plan-1" id="plan-1" cols="30" rows="10" placeholder="План действий"></textarea>
+              </li>
+              <li class="field-entertainment__item">
+                <p>Чехия</p>
+                <div class="field-entertainment__flag">
+                  <img class="field-entertainment__flag-image" src="https://via.placeholder.com/35x24"
+                    alt="Чехияа флаг">
+                </div>
+                <textarea name="plan-2" id="plan-2" cols="30" rows="10" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+                  </textarea>
+              </li>
+            </ul>
+            <button type="submit" class="form-steps__button form-steps__button--submit button">Отправить</button>
+            <button type="button" class="form-steps__button form-steps__button--previous button">На шаг назад</button>
           </div>
         </div>
       </form>
