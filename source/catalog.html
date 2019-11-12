@@ -108,7 +108,7 @@
       <div class="filters__by-travelmate">
         <h2>Подберите идеального попутчика</h2>
         <form action="https://echo.htmlacademy.ru" method="POST" name="by-travelmate-form">
-          <fieldset>
+          <fieldset class="filters__field-group">
             <legend>Хобби</legend>
             <ul class="filters__list">
               <li class="filters__list-item"><input class="filter__checkbox" type="checkbox" name="" id="zoj"><label
@@ -119,7 +119,7 @@
                   for="cycling">Велосипед</label></li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filters__field-group">
             <legend>Музыка</legend>
             <ul class="filters__list">
               <li class="filters__list-item"><input class="filter__checkbox" type="checkbox" name="" id="hardrock"
@@ -130,7 +130,7 @@
                   id="eurodance"><label for="eurodance">Евроденс</label></li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filters__field-group">
             <legend>Еда</legend>
             <ul class="filters__list">
               <li class="filters__list-item"><input class="filter__checkbox" type="checkbox" name="" id="italian"><label
@@ -141,7 +141,7 @@
                   for="sushi">Суши</label></li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filters__field-group">
             <legend>Транспорт</legend>
             <ul class="filters__transport-list transport-list transport-list--check">
               <li class="transport-list__item">
@@ -166,16 +166,16 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filters__field-group">
             <legend>Левел</legend>
             <ul class="filters__range">
               <li>
                 <label class="filters__range-label" for="from">От</label>
-                <input class="filters__range-input--from" type="number" min="0" max="100" name="from" id="from">
+                <input class="filters__range-input filters__range-input--from" type="number" min="0" max="100" name="from" id="from">
               </li>
               <li>
                 <label class="filters__range-label" for="to">До</label>
-                <input class="filters__range-input--to" type="number" name="to" min="0" max="100" id="to">
+                <input class="filters__range-input filters__range-input--to" type="number" name="to" min="0" max="100" id="to">
               </li>
             </ul>
           </fieldset>
