@@ -38,7 +38,151 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1>Попутчики</h1>
+    <header class="page-main__header">
+      <h1>Попутчики</h1>
+    </header>
+    <section class="filters">
+      <div class="filters__by-country by-country">
+        <div class="by-country__title-wrap">
+          <h2>Фильтрация по странам</h2>
+          <button class="by-country__open" type="button">Открыть фильтр</button>
+        </div>
+        <div class="by-country__wrap">
+          <ul class="by-country__list by-country__list--continents">
+            <li class="by-country__list-item by-country__list-item--active"><a href="#">Европа</a></li>
+            <li class="by-country__list-item"><a href="#">Азия</a></li>
+            <li class="by-country__list-item"><a href="#">Америка</a></li>
+            <li class="by-country__list-item"><a href="#">Острова</a></li>
+          </ul>
+          <table class="by-country__table">
+            <tr class="by-country__table-row">
+              <td class="by-country__table-cell"><a href="#">а</a></td>
+              <td class="by-country__table-cell"><a href="#">б</a></td>
+              <td class="by-country__table-cell"><a href="#">в</a></td>
+              <td class="by-country__table-cell"><a href="#">г</a></td>
+              <td class="by-country__table-cell"><a href="#">д</a></td>
+            </tr>
+            <tr class="by-country__table-row">
+              <td class="by-country__table-cell"><a href="#">е</a></td>
+              <td class="by-country__table-cell"><a href="#">з</a></td>
+              <td class="by-country__table-cell"><a href="#">и</a></td>
+              <td class="by-country__table-cell"><a href="#">к</a></td>
+              <td class="by-country__table-cell"><a href="#">л</a></td>
+            </tr>
+            <tr class="by-country__table-row">
+              <td class="by-country__table-cell"><a href="#">м</a></td>
+              <td class="by-country__table-cell"><a href="#">н</a></td>
+              <td class="by-country__table-cell"><a href="#">о</a></td>
+              <td class="by-country__table-cell"><a href="#">п</a></td>
+              <td class="by-country__table-cell"><a href="#">р</a></td>
+            </tr>
+            <tr class="by-country__table-row">
+              <td class="by-country__table-cell"><a href="#">с</a></td>
+              <td class="by-country__table-cell"><a href="#">т</a></td>
+              <td class="by-country__table-cell"><a href="#">у</a></td>
+              <td class="by-country__table-cell"><a href="#">ф</a></td>
+              <td class="by-country__table-cell"><a href="#">х</a></td>
+            </tr>
+            <tr class="by-country__table-row">
+              <td class="by-country__table-cell"><a href="#">ч</a></td>
+              <td class="by-country__table-cell"><a href="#">ш</a></td>
+              <td class="by-country__table-cell"><a href="#">э</a></td>
+              <td class="by-country__table-cell"><a href="#">ю</a></td>
+              <td class="by-country__table-cell"><a href="#">я</a></td>
+            </tr>
+          </table>
+          <ul class="by-country__list by-country__list--country-names">
+            <li class="by-country__list-item"><a href="#">Афганистан</a></li>
+            <li class="by-country__list-item"><a href="#">Албания</a></li>
+            <li class="by-country__list-item"><a href="#">Алжир</a></li>
+            <li class="by-country__list-item"><a href="#">Андорра</a></li>
+            <li class="by-country__list-item"><a href="#">Аргентина</a></li>
+            <li class="by-country__list-item"><a href="#">Армения</a></li>
+            <li class="by-country__list-item"><a href="#">Австралия</a></li>
+            <li class="by-country__list-item"><a href="#">Австрия</a></li>
+            <li class="by-country__list-item"><a href="#">Азербайджан</a></li>
+          </ul>
+          <button class="by-country__close" type="button">Свернуть</button>
+        </div>
+      </div>
+      <div class="filters__by-travelmate">
+        <h2>Подберите идеального попутчика</h2>
+        <form action="https://echo.htmlacademy.ru" method="POST" name="by-travelmate-form">
+          <fieldset class="filters__field-group">
+            <legend>Хобби</legend>
+            <ul class="filters__list">
+              <li class="filters__list-item"><input class="filter__checkbox" type="checkbox" name="" id="zoj"><label
+                  for="zoj">ЗОЖ</label></li>
+              <li class="filters__list-item"><input class="filter__checkbox" type="checkbox" name="" id="surfing"><label
+                  for="surfing">Серфинг</label></li>
+              <li class="filters__list-item"><input class="filter__checkbox" type="checkbox" name="" id="cycling"><label
+                  for="cycling">Велосипед</label></li>
+            </ul>
+          </fieldset>
+          <fieldset class="filters__field-group">
+            <legend>Музыка</legend>
+            <ul class="filters__list">
+              <li class="filters__list-item"><input class="filter__checkbox" type="checkbox" name="" id="hardrock"
+                  checked><label for="hardrock">Тяжелый рок</label></li>
+              <li class="filters__list-item"><input class="filter__checkbox" type="checkbox" name=""
+                  id="russian-rap"><label for="russian-rap">Русский рэп</label></li>
+              <li class="filters__list-item"><input class="filter__checkbox" type="checkbox" name=""
+                  id="eurodance"><label for="eurodance">Евроденс</label></li>
+            </ul>
+          </fieldset>
+          <fieldset class="filters__field-group">
+            <legend>Еда</legend>
+            <ul class="filters__list">
+              <li class="filters__list-item"><input class="filter__checkbox" type="checkbox" name="" id="italian"><label
+                  for="italian">Итальянская</label></li>
+              <li class="filters__list-item"><input class="filter__checkbox" type="checkbox" name="" id="eastern"><label
+                  for="eastern">Восточная</label></li>
+              <li class="filters__list-item"><input class="filter__checkbox" type="checkbox" name="" id="sushi"><label
+                  for="sushi">Суши</label></li>
+            </ul>
+          </fieldset>
+          <fieldset class="filters__field-group">
+            <legend>Транспорт</legend>
+            <ul class="filters__transport-list transport-list transport-list--check">
+              <li class="transport-list__item">
+                <input class="transport-list__checkbox transport-list__checkbox--plane" type="checkbox" name="plane"
+                  id="plane">
+                <label for="plane">Самолет</label>
+              </li>
+              <li class="transport-list__item">
+                <input class="transport-list__checkbox transport-list__checkbox--bus" type="checkbox" name="bus"
+                  id="bus">
+                <label for="bus">Автобус</label>
+              </li>
+              <li class="transport-list__item">
+                <input class="transport-list__checkbox transport-list__checkbox--bike" type="checkbox" name="bike"
+                  id="bike">
+                <label for="bike">Велосипед</label>
+              </li>
+              <li class="transport-list__item">
+                <input class="transport-list__checkbox transport-list__checkbox--foot" type="checkbox" name="foot"
+                  id="foot">
+                <label for="foot">Пешком</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filters__field-group">
+            <legend>Левел</legend>
+            <ul class="filters__range">
+              <li>
+                <label class="filters__range-label" for="from">От</label>
+                <input class="filters__range-input filters__range-input--from" type="number" min="0" max="100" name="from" id="from">
+              </li>
+              <li>
+                <label class="filters__range-label" for="to">До</label>
+                <input class="filters__range-input filters__range-input--to" type="number" name="to" min="0" max="100" id="to">
+              </li>
+            </ul>
+          </fieldset>
+          <button class="filters__submit button" type="submit">Показать</button>
+        </form>
+      </div>
+    </section>
     <section class="travelmates">
       <ul class="travelmates__list">
         <li class="travelmates__list-item traveler-card">
@@ -95,10 +239,13 @@
           </ul>
           <p class="traveler-card__sub-title">транспорт:</p>
           <ul class="traveler-card__transport-list transport-list">
-            <li class="transport-list__item transport-list__item--plane transport-list__item--active" aria-selected="true">Самолет</li>
-            <li class="transport-list__item transport-list__item--bus transport-list__item--active" aria-selected="true">Автобус</li>
+            <li class="transport-list__item transport-list__item--plane transport-list__item--active"
+              aria-selected="true">Самолет</li>
+            <li class="transport-list__item transport-list__item--bus transport-list__item--active"
+              aria-selected="true">Автобус</li>
             <li class="transport-list__item transport-list__item--bike" aria-selected="false">Велосипед</li>
-            <li class="transport-list__item transport-list__item--foot transport-list__item--active" aria-selected="true">Пешком</li>
+            <li class="transport-list__item transport-list__item--foot transport-list__item--active"
+              aria-selected="true">Пешком</li>
           </ul>
           <p class="traveler-card__sub-title">левел:</p>
           <div class="traveler-card__level level-label--no-text">
@@ -128,9 +275,11 @@
           </ul>
           <p class="traveler-card__sub-title">транспорт:</p>
           <ul class="traveler-card__transport-list transport-list">
-            <li class="transport-list__item transport-list__item--plane transport-list__item--active" aria-selected="true">Самолет</li>
+            <li class="transport-list__item transport-list__item--plane transport-list__item--active"
+              aria-selected="true">Самолет</li>
             <li class="transport-list__item transport-list__item--bus" aria-selected="false">Автобус</li>
-            <li class="transport-list__item transport-list__item--bike transport-list__item--active" aria-selected="true">Велосипед</li>
+            <li class="transport-list__item transport-list__item--bike transport-list__item--active"
+              aria-selected="true">Велосипед</li>
             <li class="transport-list__item transport-list__item--foot" aria-selected="false">Пешком</li>
           </ul>
           <p class="traveler-card__sub-title">левел:</p>
@@ -159,8 +308,10 @@
           </ul>
           <p class="traveler-card__sub-title">транспорт:</p>
           <ul class="traveler-card__transport-list transport-list">
-            <li class="transport-list__item transport-list__item--plane transport-list__item--active" aria-selected="true">Самолет</li>
-            <li class="transport-list__item transport-list__item--bus transport-list__item--active" aria-selected="true">Автобус</li>
+            <li class="transport-list__item transport-list__item--plane transport-list__item--active"
+              aria-selected="true">Самолет</li>
+            <li class="transport-list__item transport-list__item--bus transport-list__item--active"
+              aria-selected="true">Автобус</li>
             <li class="transport-list__item transport-list__item--bike" aria-selected="false">Велосипед</li>
             <li class="transport-list__item transport-list__item--foot" aria-selected="false">Пешком</li>
           </ul>
