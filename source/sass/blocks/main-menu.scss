@@ -1,3 +1,15 @@
 .main-menu__wrap {
-  display: none;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  padding: 40px 25px;
+  top: 100%;
+  box-sizing: border-box;
+  left:0;
+}
+.main-menu__list {
+  list-style: none;
+  text-align: center;
+  padding:0;
+  margin: 0;
 }
