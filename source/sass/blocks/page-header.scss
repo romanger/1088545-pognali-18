@@ -1,18 +1,18 @@
 .page-header {
-    padding: 25px 27px;
-    background-color: $dark-blue;
-    position: relative;
+  padding: 25px 27px;
+  background-color: $dark-blue;
+  position: relative;
 }
 
 .page-header--white {
-    background-color: white;
+  background-color: white;
 }
 
 .page-header__wrap {
-    display: flex;
-    justify-content:space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .page-header__logo {
-    align-self: center;
+  align-self: center;
 }
