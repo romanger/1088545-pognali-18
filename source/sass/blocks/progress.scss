@@ -1,0 +1,47 @@
+.progress {
+  background-color: $lighter-blue;
+  padding: 0 25px 39px;
+}
+
+.progress__list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  transform: translateY(-80px);
+  margin-bottom: -80px;
+}
+
+.progress__item {
+  color: $darker-blue;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+
+  border-radius: 10px 10px 0 0;
+  padding: 22px 25px 29px;
+
+  &:not(:first-child) {
+      margin-top: -7px;
+  }
+
+  &:last-child {
+    border-radius: 10px;
+    padding-bottom: 22px;
+  }
+}
+
+.progress__item--orange-dark {
+  background-color: $orange-dark;
+}
+
+.progress__item--orange-middle {
+  background-color: $orange-middle;
+}
+
+.progress__item--orange-light {
+  background-color: $orange-light;
+}
+
+.progress__item--yellow {
+  background-color: $yellow;
+}

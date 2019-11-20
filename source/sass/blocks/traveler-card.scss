@@ -1,0 +1,55 @@
+.traveler-card {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.traveler-card__picture {
+  order: -1;
+  margin: 0;
+}
+
+.traveler-card__image {
+  width: 100%;
+  height: auto;
+}
+
+.traveler-card__content {
+  padding: 27px 25px 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.traveler-card__name {
+  a {
+    color: $darker-blue;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+}
+
+.traveler-card__level {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.traveler-card__country-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  order: -1;
+}
+
+.traveler-card__tags {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}

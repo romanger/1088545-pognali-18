@@ -1,0 +1,13 @@
+.button {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.button--yellow {
+  background-color: $yellow;
+  color: $darker-blue;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,57 @@
+.country-card {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 11px;
+}
+
+.country-card__picture {
+  order: -1;
+  margin: 0px;
+}
+
+.country-card__image {
+  width: 100%;
+  height: auto;
+}
+
+.country-card__content {
+  border-radius: 10px;
+  padding: 28px 25px 23px;
+  display: flex;
+  flex-direction: column;
+}
+
+.country-card__flag {
+  order: -1;
+}
+.country-card__title {
+    margin-bottom: 0px;
+    a {
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 21px;
+      color: $darker-blue;
+    }
+  }
+.country-card__description {
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #444444;
+  opacity: 0.3;
+}
+
+.country-card__travelers-number {
+  margin: 0px;
+  opacity: 0.3;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,46 @@
+.rates {
+  padding: 67px 25px 38px 50px;
+  border-radius: 0 0 30px 30px;
+  background-color: $soft-grey;
+  position: relative;
+  z-index: 4;
+}
+
+.rates__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $orange-dark;
+}
+
+.rates__title--center {
+  text-align: center;
+}
+
+.rates__list {
+  margin: 0px;
+  margin-bottom: 30px;
+  padding: 0px;
+  list-style: none;
+}
+
+.rates__list-item {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-top: 1px solid #e1e3ea;
+
+  &:last-child {
+    border-bottom: 1px solid #e1e3ea;
+  }
+}
+
+.rates__business {
+  background-color: #ffffff;
+  box-shadow: 0 20px 50px rgba(29, 46, 91, 0.1);
+  border-radius: 20px;
+  padding: 1px 25px 25px;
+}
