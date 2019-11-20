@@ -1,3 +1,80 @@
 .by-country {
-    background-color: $dark-grey;
+  background-color: $dark-grey;
+  padding: 20px 25px 27px;
+  border-radius: 0 0 20px 20px;
+}
+
+.by-country__title {
+  color: $lighter-blue;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.by-country__list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.by-country__list--continents {
+  .by-country__list-item {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+
+  .by-country__list-link {
+    color: rgba($lighter-blue, 0.3);
+  }
+
+
+  .by-country__list-item--active {
+    .by-country__list-link {
+      color: $lighter-blue;
+    }
+  }
+}
+
+.by-country__table {
+  border-collapse: collapse;
+}
+
+.by-country__table-cell {
+  border: 1px solid #cbced9;
+  background-color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  width: 45px;
+  height: 42px;
+
+  a {
+    display: block;
+    color: $table-blue;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  &--active {
+    background-color: $table-blue;
+
+    a {
+      color: #ffffff;
+
+    }
+  }
+}
+
+.by-country__list--country-names {
+  .by-country__list-link {
+    color: #444444;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+  }
 }

@@ -1,5 +1,4 @@
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,61 +6,60 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Попутчики | Погнали</title>
 </head>
-
 <body class="page-body">
-    <header class="page-header page-header--white">
-        <div class="page-header__wrap">
-          <a href="index.html" class="page-header__logo logo">
-            <img class="logo__image" src="img/logo-mobile-white@1x.png" alt="Погнали логотип" width="100" height="19">
-          </a>
-          <nav class="main-menu">
-            <button class="main-menu__toggle">Открыть меню</button>
-            <div class="main-menu__wrap">
-              <ul class="main-menu__list site-list">
-                <li class="site-list__item"><a href="about.html">О сервисе</a></li>
-                <li class="site-list__item"><a href="form.html">Направления</a></li>
-                <li class="site-list__item"><a href="catalog.html">Попутчики</a></li>
-              </ul>
-              <ul class="main-menu__list user-list">
-                <li class="user-list__item"><a class="button" href="login.html">авторизация</a></li>
-              </ul>
-              <ul class="main-menu__list contact-list">
-                <li class="contact-list__item contact-list__item--phone"><a href="tel:88005558628">8 800 555-86-28</a></li>
-                <li class="contact-list__item contact-list__item--email"><a
-                    href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
-              </ul>
-              <ul class="main-menu__list social-list">
-                <li class="social-list__item social-list__item--facebook"><a href="https://www.facebook.com/"
-                    target="_blank">Facebook</a></li>
-                <li class="social-list__item social-list__item--vk"><a href="https://vk.com/" target="_blank">вКонтакте</a>
-                </li>
-                <li class="social-list__item social-list__item--instagram"><a href="https://www.instagram.com/"
-                    target="_blank">Инстаграм</a></li>
-              </ul>
-            </div>
-          </nav>
+  <header class="page-header page-header--white">
+    <div class="page-header__wrap">
+      <a href="index.html" class="page-header__logo logo">
+        <img class="logo__image" src="img/logo-mobile-white@1x.png" alt="Погнали логотип" width="100" height="19">
+      </a>
+      <nav class="main-menu">
+        <button class="main-menu__toggle">Открыть меню</button>
+        <div class="main-menu__wrap">
+          <ul class="main-menu__list site-list">
+            <li class="site-list__item"><a href="about.html">О сервисе</a></li>
+            <li class="site-list__item"><a href="form.html">Направления</a></li>
+            <li class="site-list__item"><a href="catalog.html">Попутчики</a></li>
+          </ul>
+          <ul class="main-menu__list user-list">
+            <li class="user-list__item"><a class="button" href="login.html">авторизация</a></li>
+          </ul>
+          <ul class="main-menu__list contact-list">
+            <li class="contact-list__item contact-list__item--phone"><a href="tel:88005558628">8 800 555-86-28</a></li>
+            <li class="contact-list__item contact-list__item--email"><a
+                href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+          </ul>
+          <ul class="main-menu__list social-list">
+            <li class="social-list__item social-list__item--facebook"><a href="https://www.facebook.com/"
+                target="_blank">Facebook</a></li>
+            <li class="social-list__item social-list__item--vk"><a href="https://vk.com/" target="_blank">вКонтакте</a>
+            </li>
+            <li class="social-list__item social-list__item--instagram"><a href="https://www.instagram.com/"
+                target="_blank">Инстаграм</a></li>
+          </ul>
         </div>
-      </header>
+      </nav>
+    </div>
+  </header>
   <main class="page-main">
     <header class="page-main__header">
-      <h1>Попутчики</h1>
+      <h1 class="page-main__title">Попутчики</h1>
     </header>
     <section class="filters">
       <div class="filters__by-country by-country">
         <div class="by-country__title-wrap">
-          <h2>Фильтрация по странам</h2>
+          <h2 class="by-country__title">Фильтрация по странам</h2>
           <button class="by-country__open" type="button">Открыть фильтр</button>
         </div>
         <div class="by-country__wrap">
           <ul class="by-country__list by-country__list--continents">
-            <li class="by-country__list-item by-country__list-item--active"><a href="#">Европа</a></li>
-            <li class="by-country__list-item"><a href="#">Азия</a></li>
-            <li class="by-country__list-item"><a href="#">Америка</a></li>
-            <li class="by-country__list-item"><a href="#">Острова</a></li>
+            <li class="by-country__list-item by-country__list-item--active"><a class="by-country__list-link" href="#">Европа</a></li>
+            <li class="by-country__list-item"><a class="by-country__list-link" href="#">Азия</a></li>
+            <li class="by-country__list-item"><a class="by-country__list-link" href="#">Америка</a></li>
+            <li class="by-country__list-item"><a class="by-country__list-link" href="#">Острова</a></li>
           </ul>
           <table class="by-country__table">
             <tr class="by-country__table-row">
-              <td class="by-country__table-cell"><a href="#">а</a></td>
+              <td class="by-country__table-cell by-country__table-cell--active"><a href="#">а</a></td>
               <td class="by-country__table-cell"><a href="#">б</a></td>
               <td class="by-country__table-cell"><a href="#">в</a></td>
               <td class="by-country__table-cell"><a href="#">г</a></td>
@@ -97,24 +95,25 @@
             </tr>
           </table>
           <ul class="by-country__list by-country__list--country-names">
-            <li class="by-country__list-item"><a href="#">Афганистан</a></li>
-            <li class="by-country__list-item"><a href="#">Албания</a></li>
-            <li class="by-country__list-item"><a href="#">Алжир</a></li>
-            <li class="by-country__list-item"><a href="#">Андорра</a></li>
-            <li class="by-country__list-item"><a href="#">Аргентина</a></li>
-            <li class="by-country__list-item"><a href="#">Армения</a></li>
-            <li class="by-country__list-item"><a href="#">Австралия</a></li>
-            <li class="by-country__list-item"><a href="#">Австрия</a></li>
-            <li class="by-country__list-item"><a href="#">Азербайджан</a></li>
+            <li class="by-country__list-item"><a class="by-country__list-link" href="#">Афганистан</a></li>
+            <li class="by-country__list-item"><a class="by-country__list-link" href="#">Албания</a></li>
+            <li class="by-country__list-item"><a class="by-country__list-link" href="#">Алжир</a></li>
+            <li class="by-country__list-item"><a class="by-country__list-link" href="#">Андорра</a></li>
+            <li class="by-country__list-item"><a class="by-country__list-link" href="#">Аргентина</a></li>
+            <li class="by-country__list-item"><a class="by-country__list-link" href="#">Армения</a></li>
+            <li class="by-country__list-item"><a class="by-country__list-link" href="#">Австралия</a></li>
+            <li class="by-country__list-item"><a class="by-country__list-link" href="#">Австрия</a></li>
+            <li class="by-country__list-item"><a class="by-country__list-link" href="#">Азербайджан</a></li>
           </ul>
           <button class="by-country__close" type="button">Свернуть</button>
         </div>
       </div>
-      <div class="filters__by-travelmate by-travelmate">
-        <h2>Подберите идеального попутчика</h2>
+      <div class="filters__by-travelmate ">
+        <div class="by-travelmate">
+        <h2 class="by-travelmate__title">Подберите идеального попутчика</h2>
         <form action="https://echo.htmlacademy.ru" method="POST" name="by-travelmate-form">
           <fieldset class="filters__field-group">
-            <legend>Хобби</legend>
+            <legend class="filters__field-group-title">Хобби</legend>
             <ul class="filters__list">
               <li class="filters__list-item"><input class="filter__checkbox" type="checkbox" name="" id="zoj"><label
                   for="zoj">ЗОЖ</label></li>
@@ -125,7 +124,7 @@
             </ul>
           </fieldset>
           <fieldset class="filters__field-group">
-            <legend>Музыка</legend>
+            <legend class="filters__field-group-title">Музыка</legend>
             <ul class="filters__list">
               <li class="filters__list-item"><input class="filter__checkbox" type="checkbox" name="" id="hardrock"
                   checked><label for="hardrock">Тяжелый рок</label></li>
@@ -136,7 +135,7 @@
             </ul>
           </fieldset>
           <fieldset class="filters__field-group">
-            <legend>Еда</legend>
+            <legend class="filters__field-group-title">Еда</legend>
             <ul class="filters__list">
               <li class="filters__list-item"><input class="filter__checkbox" type="checkbox" name="" id="italian"><label
                   for="italian">Итальянская</label></li>
@@ -147,7 +146,7 @@
             </ul>
           </fieldset>
           <fieldset class="filters__field-group">
-            <legend>Транспорт</legend>
+            <legend class="filters__field-group-title">Транспорт</legend>
             <ul class="filters__transport-list transport-list transport-list--check">
               <li class="transport-list__item">
                 <input class="transport-list__checkbox transport-list__checkbox--plane" type="checkbox" name="plane"
@@ -172,27 +171,30 @@
             </ul>
           </fieldset>
           <fieldset class="filters__field-group">
-            <legend>Левел</legend>
+            <legend class="filters__field-group-title">Левел</legend>
             <ul class="filters__range">
               <li>
                 <label class="filters__range-label" for="from">От</label>
-                <input class="filters__range-input filters__range-input--from" type="number" min="0" max="100" name="from" id="from">
+                <input class="filters__range-input filters__range-input--from" type="number" min="0" max="100"
+                  name="from" id="from">
               </li>
               <li>
                 <label class="filters__range-label" for="to">До</label>
-                <input class="filters__range-input filters__range-input--to" type="number" name="to" min="0" max="100" id="to">
+                <input class="filters__range-input filters__range-input--to" type="number" name="to" min="0" max="100"
+                  id="to">
               </li>
             </ul>
           </fieldset>
           <button class="filters__submit button" type="submit">Показать</button>
         </form>
+        </div>
       </div>
     </section>
     <section class="travelmates travelmates--no-bg">
       <ul class="travelmates__list">
         <li class="travelmates__list-item traveler-card">
           <h2 class="traveler-card__name"><a href="user.html">Таня Фирсова</a></h2>
-          <p class="traveler-card__picture--round">
+          <p class="traveler-card__picture traveler-card__picture--round">
             <a href="user.html">
               <img src="https://via.placeholder.com/70x70" alt="Таня Фирсова фото" width="70" height="70"
                 class="traveler-card__image"></a>
@@ -227,7 +229,7 @@
         </li>
         <li class="travelmates__list-item traveler-card">
           <h2 class="traveler-card__name"><a href="user.html">Петя Демин</a></h2>
-          <p class="traveler-card__picture--round"><a href="user.html">
+          <p class="traveler-card__picture traveler-card__picture--round"><a href="user.html">
               <img src="https://via.placeholder.com/70x70" alt="Петя Демин фото" width="70" height="70"
                 class="traveler-card__image"></a>
           </p>
@@ -260,7 +262,7 @@
         </li>
         <li class="travelmates__list-item traveler-card">
           <h2 class="traveler-card__name"><a href="user.html">Марк Смолов</a></h2>
-          <p class="traveler-card__picture--round"><a href="user.html">
+          <p class="traveler-card__picture traveler-card__picture--round"><a href="user.html">
               <img src="https://via.placeholder.com/70x70" alt="Марк Смолов фото" width="70" height="70"
                 class="traveler-card__image"></a>
           </p>
@@ -295,7 +297,7 @@
         </li>
         <li class="travelmates__list-item traveler-card">
           <h2 class="traveler-card__name"><a href="user.html">Лариса Роговая</a></h2>
-          <p class="traveler-card__picture--round"><a href="user.html">
+          <p class="traveler-card__picture traveler-card__picture--round"><a href="user.html">
               <img src="https://via.placeholder.com/70x70" alt="Лариса Роговая фото" width="70" height="70"
                 class="traveler-card__image"></a>
           </p>
@@ -335,21 +337,20 @@
     </section>
   </main>
   <footer class="page-footer">
-    <a class="page-footer__logo logo">
-      <img class="logo__image" src="https://via.placeholder.com/100x19" alt="Погнали логотип" width="100" height="19">
-    </a>
-    <ul class="page-footer__list social-list">
-      <li class="social-list__item"><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-      <li class="social-list__item"><a href="https://vk.com/" target="_blank">вКонтакте</a></li>
-      <li class="social-list__item"><a href="https://www.instagram.com/" target="_blank">Инстаграм</a></li>
-    </ul>
-
-    <p class="page-footer__credit">
-      Разработано
-      <a href="https://htmlacademy.ru/intensive/adaptive"><img src="https://via.placeholder.com/27x34" width="27"
-          height="34" alt="htmlacademy логотип"></a>
-    </p>
-  </footer>
+      <a class="page-footer__logo logo">
+        <img class="logo__image" src="img/logo-mobile-blue@1x.png" alt="Погнали логотип" width="100" height="19">
+      </a>
+      <ul class="page-footer__list social-list">
+        <li class="social-list__item"><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+        <li class="social-list__item"><a href="https://vk.com/" target="_blank">вКонтакте</a></li>
+        <li class="social-list__item"><a href="https://www.instagram.com/" target="_blank">Инстаграм</a></li>
+      </ul>
+      <p class="page-footer__copy">
+        <span class="page-footer__copy-title">Разработано</span>
+        <a class="page-footer__copy-link" href="https://htmlacademy.ru/intensive/adaptive"><img
+            src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy логотип"></a>
+      </p>
+    </footer>
 
 </body>
 
