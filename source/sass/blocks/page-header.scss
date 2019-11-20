@@ -11,8 +11,5 @@
 .page-header__wrap {
   display: flex;
   justify-content: space-between;
-}
-
-.page-header__logo {
-  align-self: center;
+  align-items: flex-start;
 }
