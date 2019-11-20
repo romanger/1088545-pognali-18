@@ -1,0 +1,25 @@
+.field-number__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.field-number__label,
+.field-number__units {
+  color: $table-blue;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2.15px;
+}
+
+.field-number__units {
+  color: rgba($table-blue, 0.3);
+}
+
+.field-number__input {
+    width: 100%;
+}
+
+.field-number__button--minus {
+    order: -1;
+}

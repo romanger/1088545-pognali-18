@@ -6,16 +6,32 @@
   border-radius: 10px;
   position: relative;
   margin-bottom: 10px;
+
+  &--full {
+    padding: 18px 15px 22px;
+  }
+
 }
+
+
 
 .traveler-card__picture {
   order: -1;
   margin: 0;
 }
 
-.traveler-card__image {
-  width: 100%;
-  height: auto;
+.traveler-card__picture--big {
+  .traveler-card__image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.traveler-card__picture--small {
+  .traveler-card__image {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 .traveler-card__content {
@@ -33,18 +49,11 @@
   }
 }
 
-.traveler-card__level {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-}
 
 .traveler-card__country-list {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  order: -1;
 }
 
 .traveler-card__tags {

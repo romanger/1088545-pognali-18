@@ -1,0 +1,25 @@
+.field-entertainment {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.field-entertainment_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.field-entertainment__title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.field-entertainment__textarea {
+  width: 100%;
+  height: 220px;
+  padding: 13px 15px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+}
