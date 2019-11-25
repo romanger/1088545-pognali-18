@@ -1,0 +1,45 @@
+.progress {
+  background-color: $main-color-light;
+  padding: 0 25px 39px;
+}
+
+.progress__list {
+  @include reset-list;
+  transform: translateY(-80px);
+  margin-bottom: -80px;
+}
+
+.progress__item {
+  color: $main-color;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+
+  border-radius: 10px 10px 0 0;
+  padding: 22px 25px 29px;
+
+  &:not(:first-child) {
+      margin-top: -7px;
+  }
+
+  &:last-child {
+    border-radius: 10px;
+    padding-bottom: 22px;
+  }
+}
+
+.progress__item--orange-dark {
+  background-color: $highlight-color4;
+}
+
+.progress__item--orange-middle {
+  background-color: $highlight-color3;
+}
+
+.progress__item--orange-light {
+  background-color: $highlight-color2;
+}
+
+.progress__item--yellow {
+  background-color: $highlight-color1;
+}

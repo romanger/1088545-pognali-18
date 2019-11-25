@@ -1,0 +1,25 @@
+.filters__by-travelmate {
+  padding: 24px 25px 28px;
+}
+
+.filters__list,
+.filters__transport-list {
+  @include reset-list;
+}
+
+.filters__field-group-title {
+  color: $main-color-lighter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 13px 0;
+}
+
+.filters__list-item {
+  color: $text-color;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  padding: 6px 0;
+}

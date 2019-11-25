@@ -1,0 +1,39 @@
+.travelmates {
+  background-color: $main-color-light;
+  padding: 50px 25px 30px;
+  border-radius: 0 0 30px 30px;
+}
+
+.travelmates--no-bg {
+  background: none;
+}
+
+.travelmates__list-item {
+  background-color: #ffffff;
+}
+
+.travelmates__header {
+  padding: 22px 25px 60px;
+  color: #ffffff;
+}
+
+.travelmates__title {
+  color: $highlight-color4;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.travelmates__text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+
+  &--bold {
+    font-weight: 700;
+  }
+}
+
+.travelmates__list {
+  @include reset-list;
+}
