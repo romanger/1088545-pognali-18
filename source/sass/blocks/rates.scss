@@ -1,7 +1,7 @@
 .rates {
   padding: 67px 25px 38px 50px;
   border-radius: 0 0 30px 30px;
-  background-color: $soft-grey;
+  background-color: $neutral-color1;
   position: relative;
   z-index: 4;
 }
@@ -10,7 +10,7 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
-  color: $orange-dark;
+  color: $highlight-color4;
 }
 
 .rates__title--center {
@@ -18,23 +18,21 @@
 }
 
 .rates__list {
-  margin: 0px;
+  @include reset-list;
   margin-bottom: 30px;
-  padding: 0px;
-  list-style: none;
 }
 
 .rates__list-item {
-  color: #444444;
+  color: $text-color;
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
   padding-top: 14px;
   padding-bottom: 14px;
-  border-top: 1px solid #e1e3ea;
+  border-top: 1px solid $nuetral-color6;
 
   &:last-child {
-    border-bottom: 1px solid #e1e3ea;
+    border-bottom: 1px solid $nuetral-color6;
   }
 }
 

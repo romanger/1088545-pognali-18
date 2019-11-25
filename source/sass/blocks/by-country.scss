@@ -1,11 +1,11 @@
 .by-country {
-  background-color: $dark-grey;
+  background-color: $neutral-color2;
   padding: 20px 25px 27px;
   border-radius: 0 0 20px 20px;
 }
 
 .by-country__title {
-  color: $lighter-blue;
+  color: $main-color-light;
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
@@ -13,9 +13,7 @@
 }
 
 .by-country__list {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
+  @include reset-list;
 }
 
 .by-country__list--continents {
@@ -28,13 +26,13 @@
   }
 
   .by-country__list-link {
-    color: rgba($lighter-blue, 0.3);
+    color: rgba($main-color-light, 0.3);
   }
 
 
   .by-country__list-item--active {
     .by-country__list-link {
-      color: $lighter-blue;
+      color: $main-color-light;
     }
   }
 }
@@ -44,7 +42,7 @@
 }
 
 .by-country__table-cell {
-  border: 1px solid #cbced9;
+  border: 1px solid $nuetral-color5;
   background-color: #ffffff;
   text-align: center;
   vertical-align: middle;
@@ -53,7 +51,7 @@
 
   a {
     display: block;
-    color: $table-blue;
+    color: $main-color-lighter;
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
@@ -61,7 +59,7 @@
   }
 
   &--active {
-    background-color: $table-blue;
+    background-color: $main-color-lighter;
 
     a {
       color: #ffffff;
@@ -72,7 +70,7 @@
 
 .by-country__list--country-names {
   .by-country__list-link {
-    color: #444444;
+    color: $text-color;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;

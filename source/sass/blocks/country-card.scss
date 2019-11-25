@@ -34,7 +34,7 @@
       font-size: 21px;
       font-weight: 700;
       line-height: 21px;
-      color: $darker-blue;
+      color: $main-color;
     }
   }
 .country-card__description {
@@ -42,14 +42,14 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
-  color: #444444;
+  color: $text-color;
   opacity: 0.3;
 }
 
 .country-card__travelers-number {
   margin: 0px;
   opacity: 0.3;
-  color: #444444;
+  color: $text-color;
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;

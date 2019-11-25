@@ -1,18 +1,16 @@
 .progress {
-  background-color: $lighter-blue;
+  background-color: $main-color-light;
   padding: 0 25px 39px;
 }
 
 .progress__list {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
+  @include reset-list;
   transform: translateY(-80px);
   margin-bottom: -80px;
 }
 
 .progress__item {
-  color: $darker-blue;
+  color: $main-color;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
@@ -31,17 +29,17 @@
 }
 
 .progress__item--orange-dark {
-  background-color: $orange-dark;
+  background-color: $highlight-color4;
 }
 
 .progress__item--orange-middle {
-  background-color: $orange-middle;
+  background-color: $highlight-color3;
 }
 
 .progress__item--orange-light {
-  background-color: $orange-light;
+  background-color: $highlight-color2;
 }
 
 .progress__item--yellow {
-  background-color: $yellow;
+  background-color: $highlight-color1;
 }

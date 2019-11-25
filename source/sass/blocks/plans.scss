@@ -1,5 +1,5 @@
 .plans {
-  background-color: $form-grey-1;
+  background-color: $nuetral-color3;
   padding: 29px 25px 65px;
   position: relative;
   z-index: 2;
@@ -8,16 +8,14 @@
 }
 
 .plans__title {
-  color: $table-blue;
+  color: $main-color-lighter;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
 }
 
 .plans__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include reset-list;
 }
 
 .plans__list-item {
@@ -28,7 +26,7 @@
 }
 
 .plans__sub-title {
-  color: $table-blue;
+  color: $main-color-lighter;
   font-size: 16px;
   font-weight: 700;
   line-height: 16px;
@@ -36,7 +34,7 @@
 }
 
 .plans__content {
-  color: $table-blue;
+  color: $main-color-lighter;
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;

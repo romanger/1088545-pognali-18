@@ -1,5 +1,5 @@
 .register {
-  background-color: $lighter-blue;
+  background-color: $main-color-light;
   padding: 130px 25px 45px;
   border-radius: 0 0 30px 30px;
   position: relative;
@@ -12,7 +12,7 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
-  color: $orange-dark;
+  color: $highlight-color4;
 
 }
 
@@ -24,6 +24,6 @@
 }
 
 .register__link {
-  color: $yellow;
+  color: $highlight-color1;
   text-decoration: underline;
 }

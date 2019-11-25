@@ -1,5 +1,5 @@
 .about {
-  background-color: $lighter-blue;
+  background-color: $main-color-light;
   background-image: url(/img/about-mobile@1x.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,7 +9,7 @@
 }
 
 .about__title {
-  color: $orange-dark;
+  color: $highlight-color4;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;

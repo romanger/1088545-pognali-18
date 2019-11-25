@@ -1,5 +1,5 @@
 .travelmates {
-  background-color: $lighter-blue;
+  background-color: $main-color-light;
   padding: 50px 25px 30px;
   border-radius: 0 0 30px 30px;
 }
@@ -18,7 +18,7 @@
 }
 
 .travelmates__title {
-  color: $orange-dark;
+  color: $highlight-color4;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
@@ -35,7 +35,5 @@
 }
 
 .travelmates__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  @include reset-list;
 }
