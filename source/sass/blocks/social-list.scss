@@ -1,0 +1,12 @@
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-list__item {
+  padding-right: 25px;
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
