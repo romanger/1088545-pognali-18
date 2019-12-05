@@ -1,12 +1,15 @@
 .progress {
   background-color: $main-color-light;
   padding: 0 25px 39px;
+
 }
 
 .progress__list {
   @include reset-list;
   transform: translateY(-80px);
   margin-bottom: -80px;
+  width: 320px;
+  margin: auto;
 }
 
 .progress__item {

@@ -1,5 +1,11 @@
 .countries {
   padding: 44px 25px 30px;
+  border-radius: 0 0 30px 30px;
+}
+
+.countries__wrap {
+  width: 320px;
+  margin: auto;
 }
 
 .countries__header {

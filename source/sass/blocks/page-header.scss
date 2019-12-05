@@ -1,6 +1,10 @@
 .page-header {
   background-color: $main-color-dark;
   position: relative;
+
+  &--white {
+    background-color: #ffffff;
+  }
 }
 
 .page-header__logo {

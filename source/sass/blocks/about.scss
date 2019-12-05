@@ -2,10 +2,15 @@
   background-color: $main-color-light;
   background-image: url(/img/about-mobile@1x.png);
   background-repeat: no-repeat;
-  background-size: cover;
+ background-position: center;
 
   padding: 33px 50px 84px;
   border-radius: 0 0 30px 30px;
+}
+
+.about__wrap {
+  width: 320px;
+  margin: auto;
 }
 
 .about__title {
