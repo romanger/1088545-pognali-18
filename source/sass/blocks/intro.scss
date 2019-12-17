@@ -1,5 +1,5 @@
 .intro {
-  background-image: url(/img/globe-back-mobile@1x.jpg);
+  background-image: url(../img/globe-back-mobile@1x.jpg);
   background-position: top;
   background-size: 100% 55%;
   background-repeat: no-repeat;
@@ -7,7 +7,7 @@
 }
 
 .intro__wrap {
-  background-image: url(/img/traveller-illustration-mobile@1x.png);
+  background-image: url(../img/traveller-illustration-mobile@1x.png);
   background-repeat: no-repeat;
   background-position: 50% 45%;
   padding: 25px 25px 0;
@@ -24,13 +24,58 @@
   margin-bottom: 247px;
 }
 
+.intro__review {
+  background-color: $main-color;
+  padding: 22px 25px 110px;
+  margin-left: -25px;
+  margin-right: -25px;
+}
+
 .intro__button-list {
   margin: 0px;
   padding: 0px;
 }
 
 @media (min-width:$tablet-width) {
+  .intro__wrap {
+    width: 768px;
+  }
+
+  .intro__title {
+    width: 391px;
+    margin-right:auto;
+    margin-left: auto;
+    margin-bottom: 96px;
+  }
+
+  .intro__review {
+    width: 257px;
+    background-color: transparent;
+    margin-left: 45px;
+    margin-bottom: 210px;
+    padding: 0px;
+  }
+
   .intro__button-list {
     display: none;
   }
+
 }
+
+
+@media (min-width:$desktop-width) {
+  .intro__wrap {
+    width: 1120px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .intro__title {
+    margin-left: 69px;
+    margin-bottom: 107px;
+    text-align: left;
+  }
+  .intro__review {
+    margin-right: 28px;
+    text-align: left;
+  }
+ }

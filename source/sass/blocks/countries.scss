@@ -29,3 +29,34 @@
 .countries__list {
   @include reset-list;
 }
+
+@media(min-width:$tablet-width) {
+  .countries__wrap {
+    width: 618px;
+  }
+  .countries__header {
+    max-width: 337px;
+    padding-left: 0px;
+  }
+}
+
+@media(min-width:$desktop-width) {
+  .countries__wrap {
+    width: 1320px;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .countries__header {
+    padding-right: 180px;
+    padding-bottom: 150px;
+  }
+
+  .countries__button {
+    position: absolute;
+    right: 242px;
+    bottom: 139px;
+  }
+}

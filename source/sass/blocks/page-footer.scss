@@ -7,3 +7,16 @@
     padding: 38px 25px 0px;
     text-align: center;
 }
+
+@media (min-width:$tablet-width) {
+    .page-footer {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    .page-footer__copy {
+        display: flex;
+        align-items: center;
+    }
+}

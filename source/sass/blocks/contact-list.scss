@@ -1,5 +1,6 @@
 .contact-list {
     padding-bottom: 42px;
+    @include reset-list;
 }
 .contact-list__link {
   color: $main-color-light;

@@ -7,7 +7,7 @@
 .progress__list {
   @include reset-list;
   transform: translateY(-80px);
-  margin-bottom: -80px;
+  margin-top: -80px;
   width: 320px;
   margin: auto;
 }
@@ -45,4 +45,27 @@
 
 .progress__item--yellow {
   background-color: $highlight-color1;
+}
+
+
+@media (min-width:$tablet-width) {
+  .progress__list {
+    width: 688px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .progress__item {
+    width: 50%;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .progress__list {
+    width: 1320px;
+  }
+  .progress__item {
+    width: 25%;
+  }
 }

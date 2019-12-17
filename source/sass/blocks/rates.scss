@@ -1,10 +1,30 @@
 .rates {
-  padding: 67px 25px 38px 50px;
+  // padding: 67px 25px 38px 50px;
   border-radius: 0 0 30px 30px;
   background-color: $neutral-color1;
   position: relative;
   z-index: 4;
 }
+
+.rates__wrap {
+  width: 270px;
+  padding-top: 53px;
+  padding-bottom: 38px;
+  margin: auto;
+  padding-left: 25px;
+}
+
+.rates--no-js {
+  .rates__business {
+    display: block;
+    margin-top: 40px;
+  }
+
+  .rates__button {
+    display: none;
+  }
+}
+
 
 .rates__title {
   font-size: 24px;
@@ -23,6 +43,8 @@
 }
 
 .rates__list-item {
+  display: flex;
+  flex-direction: column;
   color: $text-color;
   font-size: 16px;
   font-weight: 300;
@@ -41,4 +63,55 @@
   box-shadow: 0 20px 50px rgba(29, 46, 91, 0.1);
   border-radius: 20px;
   padding: 1px 25px 25px;
+  display: none;
+  width: 270px;
+
+  &--show {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &--no-js {
+    display: block;
+    margin-top: 40px;
+  }
+}
+
+@media(min-width:$tablet-width) {
+  .rates__wrap {
+    width: 688px;
+  }
+
+  .rates__title {
+    text-align: center;
+
+    br {
+      display: none;
+    }
+  }
+
+  .rates__list {
+    width: 100%;
+  }
+
+  .rates__list-item {
+    display: table-row;
+  }
+
+  .rates__business {
+    width: 688px;
+  }
+}
+
+@media(min-width:$desktop-width) {
+  .rates__wrap {
+    width: 1175px;
+  }
+
+  .rates__business {
+    width: 750px;
+  }
 }

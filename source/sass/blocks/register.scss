@@ -1,11 +1,17 @@
 .register {
   background-color: $main-color-light;
-  padding: 130px 25px 45px;
   border-radius: 0 0 30px 30px;
   position: relative;
   z-index: 3;
   margin-top: -80px;
   text-align: center;
+}
+
+.register__wrap {
+  width: 270px;
+  margin: auto;
+  padding-top: 130px;
+  padding-bottom: 45px;
 }
 
 .register__title {
@@ -26,4 +32,16 @@
 .register__link {
   color: $highlight-color1;
   text-decoration: underline;
+}
+
+@media(min-width:$tablet-width){
+  .register__wrap {
+    width: 618px;
+  }
+}
+
+@media(min-width:$desktop-width){
+  .register__wrap {
+    width: 1174px;
+  }
 }

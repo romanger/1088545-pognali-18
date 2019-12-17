@@ -1,7 +1,14 @@
 .travelmates {
   background-color: $main-color-light;
-  padding: 50px 25px 30px;
+  padding-top: 50px;
+  padding-bottom: 30px;
   border-radius: 0 0 30px 30px;
+
+}
+
+.travelmates__wrap {
+  width: 270px;
+  margin: auto;
 }
 
 .travelmates--no-bg {
@@ -36,4 +43,59 @@
 
 .travelmates__list {
   @include reset-list;
+}
+
+@media(min-width:$tablet-width) {
+  .travelmates {
+    padding: 0px;
+  }
+
+  .travelmates__wrap {
+    width: 618px;
+    padding-bottom: 88px;
+  }
+
+  .travelmates__header {
+    width: 423px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 62px;
+  }
+
+  .travelmates__list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+  }
+
+  .travelmates__item {
+    width: 285px;
+  }
+}
+
+@media(min-width:$desktop-width) {
+  .travelmates__wrap {
+    width: 1320px;
+    display: flex;
+    position: relative;
+    min-height: 602px;
+    justify-content: space-between;
+    padding-top: 133px;
+    padding-bottom: 134px;
+  }
+
+  .travelmates__header {
+    margin-left: 72px;
+    padding-bottom: 168px;
+  }
+
+  .travelmates__list {
+    width: 630px;
+  }
+
+  .travelmates__button {
+    position: absolute;
+    left: 72px;
+    bottom: 134px;
+  }
 }

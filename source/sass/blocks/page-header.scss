@@ -1,13 +1,167 @@
 .page-header {
   background-color: $main-color-dark;
   position: relative;
+  min-height: 73px;
+  width: 100%;
 
-  &--white {
+}
+
+.page-header__menu-list {
+  @include reset-list;
+}
+
+.page-header__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 27px 25px;
+  margin: 0px;
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+}
+
+.page-header__main-menu,
+.page-header__user-list,
+.page-header__contact-list,
+.page-header__social-list {
+  width: 100%;
+}
+
+.page-header__logo {
+  order: 1;
+}
+
+.page-header__menu-toggle {
+  order: 2;
+}
+
+.page-header__main-menu {
+  order: 3;
+}
+
+.page-header__user-list {
+  order: 4;
+  margin-bottom: 51px;
+}
+
+.page-header__contact-list {
+  order: 5;
+}
+
+.page-header__social-list {
+  order: 6;
+}
+
+.page-header--menu-fixed {
+  .page-header__wrap {
     background-color: #ffffff;
   }
 }
 
-.page-header__logo {
-  display: inline-block;
-  height: 75px;
+.page-header--menu-open {
+  .page-header__wrap {
+    background-color: #ffffff;
+  }
+}
+
+.page-header--menu-close {
+
+  .page-header__main-menu,
+  .page-header__user-list,
+  .page-header__social-list,
+  .page-header__contact-list {
+    display: none;
+  }
+}
+
+.page-header--no-js {
+  height: auto;
+
+  .page-header__wrap {
+    position: static;
+  }
+
+  .page-header__menu-toggle {
+    display: none;
+  }
+
+}
+
+@media(min-width:$tablet-width) {
+
+  .page-header {
+    min-height: 132px;
+  }
+
+  .page-header__wrap {
+    padding: 45px 40px 90px;
+  }
+
+  .page-header__main-menu {
+    order: 4;
+  }
+
+  .page-header__user-list {
+    order: 3;
+    width: auto;
+    margin-bottom: 0px;
+  }
+
+  .page-header--menu-close {
+    .page-header__user-list {
+      display: block;
+    }
+  }
+}
+
+
+@media(min-width:$desktop-width) {
+  .page-header {
+    min-height: 90px;
+
+    &--menu-open {
+      background-color: $main-color;
+    }
+  }
+
+  .page-header__wrap {
+    padding: 47px 60px 0px;
+    justify-content: flex-start;
+  }
+
+  .page-header--menu-open {
+    .page-header__wrap {
+      background-color: transparent;
+    }
+  }
+
+  .page-header--menu-close {
+
+    .page-header__main-menu,
+    .page-header__user-list,
+    .page-header__contact-list {
+      display: initial;
+    }
+  }
+
+  .page-header__menu-toggle,
+  .page-header__social-list {
+    display: none;
+  }
+
+  .page-header__user-list {
+    order: 6;
+  }
+
+  .page-header__contact-list {
+    margin-left: auto;
+  }
+
+  .page-header__main-menu,
+  .page-header__user-list,
+  .page-header__contact-list {
+    width: auto;
+
+  }
 }

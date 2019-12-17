@@ -1,10 +1,16 @@
-.contacts__wrap {
+.contacts__header {
   background-color:$highlight-color1;
-  padding: 110px 25px 35px;
   border-radius: 0 0 30px 30px;
   position: relative;
   z-index: 2;
   margin-top: -80px;
+}
+
+.contacts__wrap {
+  width: 270px;
+  margin: auto;
+  padding-top: 110px;
+  padding-bottom: 35px;
 }
 
 .contacts__address {
@@ -22,4 +28,17 @@
   margin-top: -35px;
   width: 100%;
   border: none;
+}
+
+@media(min-width:$tablet-width) {
+  .contacts__wrap {
+    width: 618px;
+  }
+}
+
+@media(min-width:$desktop-width) {
+  .contacts__wrap {
+    width: 1174px;
+    padding-left: 151px;
+  }
 }
