@@ -45,6 +45,12 @@
   @include reset-list;
 }
 
+.travelmates--catalog {
+  .travelmates__list {
+    flex-direction: column;
+  }
+}
+
 @media(min-width:$tablet-width) {
   .travelmates {
     padding: 0px;
@@ -70,6 +76,12 @@
 
   .travelmates__item {
     width: 285px;
+  }
+
+  .travelmates--catalog {
+    .travelmates__wrap {
+      width: 688px;
+    }
   }
 }
 

@@ -1,6 +1,42 @@
 .catalog__filter-by-travelmate {
-    width: 270px;
+  width: 270px;
+  margin: auto;
+  padding-top: 24px;
+  padding-bottom: 28px;
+}
+
+.catalog__travelmates {
+  width: 270px;
+  margin: auto;
+  padding-bottom: 46px;
+}
+
+.catalog__travelmates-list {
+  @include reset-list;
+}
+
+@media (min-width:$tablet-width) {
+
+  .catalog__filter-by-travelmate,
+  .catalog__travelmates {
+    width: 688px;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .catalog {
+    display: flex;
+    width: 1320px;
     margin: auto;
-    padding-top: 24px;
-    padding-bottom: 28px;
+    justify-content: space-between;
+  }
+  .catalog__travelmates {
+      order: -1;
+      width: 950px;
+      padding-top: 24px;
+  }
+
+  .catalog__filter-by-travelmate {
+      width: 285px;
+  }
 }
