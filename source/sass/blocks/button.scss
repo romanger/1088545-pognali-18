@@ -1,13 +1,38 @@
 .button {
-    text-decoration: none;
-    background-color: transparent;
+  text-decoration: none;
+  background-color: transparent;
 }
 
-.button--yellow {
+.button--square {
+  border-radius: 10px;
+  background-color: $highlight-color1;
+  color: $main-color-lighter;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  display: block;
+  padding: 24px;
+}
+
+.button--square-border {
+  border-radius: 10px;
+  background-color: transparent;
+  color: $main-color-lighter;
+  border: 3px solid $main-color-light;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  display: block;
+  padding: 21px;
+}
+
+.button--round {
+  border-radius: 20px;
   background-color: $highlight-color1;
   color: $main-color;
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+  padding: 11px;
 }

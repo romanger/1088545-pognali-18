@@ -4,12 +4,15 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  padding: 33px 50px 84px;
+  padding-top: 33px;
+  padding-bottom: 84px;
   border-radius: 0 0 30px 30px;
 }
 
 .about__wrap {
-  width: 320px;
+  width: 270px;
+  padding-right: 38px;
+  padding-left: 24px;
   margin: auto;
 }
 
@@ -31,16 +34,23 @@
   }
 }
 
+.about__button {
+  display: none;
+}
+
 @media(min-width:$tablet-width) {
   .about__wrap {
     width: 768px;
     margin:auto;
-
   }
 
   .about__content {
     max-width: 298px;
     margin-left: 75px;
+  }
+  .about__button {
+    display: block;
+    width: 274px;
   }
 }
 
