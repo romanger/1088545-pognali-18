@@ -7,10 +7,8 @@
 }
 
 .rates__wrap {
-  width: 270px;
   padding-top: 53px;
   padding-bottom: 38px;
-  margin: auto;
   padding-left: 25px;
 }
 
@@ -81,9 +79,6 @@
 }
 
 @media(min-width:$tablet-width) {
-  .rates__wrap {
-    width: 688px;
-  }
 
   .rates__title {
     text-align: center;
@@ -107,11 +102,13 @@
 }
 
 @media(min-width:$desktop-width) {
-  .rates__wrap {
-    width: 1175px;
-  }
 
   .rates__business {
     width: 750px;
+  }
+
+  .rates__wrap {
+    padding-left: 71px;
+    padding-right: 74px;
   }
 }

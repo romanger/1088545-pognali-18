@@ -8,8 +8,6 @@
 }
 
 .register__wrap {
-  width: 270px;
-  margin: auto;
   padding-top: 130px;
   padding-bottom: 45px;
 }
@@ -19,7 +17,6 @@
   font-weight: 700;
   line-height: 24px;
   color: $highlight-color4;
-
 }
 
 .register__text {
@@ -36,12 +33,14 @@
 
 @media(min-width:$tablet-width){
   .register__wrap {
-    width: 618px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
 
 @media(min-width:$desktop-width){
   .register__wrap {
-    width: 1174px;
+    padding-left: 71px;
+    padding-right: 74px;
   }
 }

@@ -10,10 +10,8 @@
 }
 
 .about__wrap {
-  width: 270px;
   padding-right: 38px;
   padding-left: 24px;
-  margin: auto;
 }
 
 .about__title {
@@ -40,14 +38,13 @@
 
 @media(min-width:$tablet-width) {
   .about__wrap {
-    width: 768px;
-    margin:auto;
+    padding-left: 35px;
   }
 
   .about__content {
     max-width: 298px;
-    margin-left: 75px;
   }
+
   .about__button {
     display: block;
     width: 274px;
@@ -55,10 +52,11 @@
 }
 
 @media(min-width:$desktop-width) {
-  .about__wrap {
-    width: 1320px;
-  }
   .about__content {
     max-width: 609px;
+  }
+
+  .about__wrap {
+    padding-left: 71px;
   }
 }

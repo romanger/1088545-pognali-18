@@ -4,11 +4,6 @@
   border-radius: 0 0 30px 30px;
 }
 
-.countries__wrap {
-  width: 270px;
-  margin: auto;
-}
-
 .countries__header {
   padding: 27px 25px 36px;
 }
@@ -34,8 +29,10 @@
 
 @media(min-width:$tablet-width) {
   .countries__wrap {
-    width: 618px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
+
   .countries__header {
     max-width: 337px;
     padding-left: 0px;
@@ -45,16 +42,18 @@
 
 @media(min-width:$desktop-width) {
   .countries__wrap {
-    width: 1320px;
     display: flex;
     flex-direction: row-reverse;
     position: relative;
-    justify-content: space-between;
+    padding-right: 182px;
+    padding-left: 71px;
   }
 
   .countries__header {
-    padding-right: 180px;
     padding-bottom: 150px;
+    padding-right: 0px;
+    width: 337px;
+    margin-left: auto;
   }
 
   .countries__button {

@@ -3,12 +3,6 @@
   padding-top: 50px;
   padding-bottom: 30px;
   border-radius: 0 0 30px 30px;
-
-}
-
-.travelmates__wrap {
-  width: 270px;
-  margin: auto;
 }
 
 .travelmates--no-bg {
@@ -57,8 +51,9 @@
   }
 
   .travelmates__wrap {
-    width: 618px;
     padding-bottom: 88px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   .travelmates__header {
@@ -87,17 +82,17 @@
 
 @media(min-width:$desktop-width) {
   .travelmates__wrap {
-    width: 1320px;
     display: flex;
     position: relative;
     min-height: 602px;
     justify-content: space-between;
     padding-top: 133px;
     padding-bottom: 134px;
+    padding-left: 71px;
+    padding-right: 0px;
   }
 
   .travelmates__header {
-    margin-left: 72px;
     padding-bottom: 168px;
   }
 

@@ -7,8 +7,6 @@
 }
 
 .contacts__wrap {
-  width: 270px;
-  margin: auto;
   padding-top: 110px;
   padding-bottom: 35px;
 }
@@ -32,13 +30,16 @@
 
 @media(min-width:$tablet-width) {
   .contacts__wrap {
-    width: 618px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
 
 @media(min-width:$desktop-width) {
   .contacts__wrap {
-    width: 1174px;
-    padding-left: 151px;
+    padding-left: 223px;
+    padding-right: 74px;
+    display: flex;
+    justify-content: space-between;
   }
 }

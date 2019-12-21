@@ -4,8 +4,6 @@
 }
 
 .profile__wrap {
-  width: 270px;
-  margin: auto;
   padding-top: 23px;
   padding-bottom: 68px;
   display: flex;
@@ -47,8 +45,9 @@
 
 @media (min-width:$tablet-width) {
   .profile__wrap {
-    width: 618px;
     justify-content: space-between;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   .profile__level {
@@ -83,7 +82,6 @@
 
 @media (min-width:$desktop-width) {
   .profile__wrap {
-    width: 1321px;
     padding-left: 64px;
     position: relative;
   }

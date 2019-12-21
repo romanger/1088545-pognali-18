@@ -38,8 +38,5 @@
   ],
   "engines": {
     "node": "8.16"
-  },
-  "dependencies": {
-    "n": "^6.1.3"
   }
 }

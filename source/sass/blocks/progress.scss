@@ -1,15 +1,12 @@
 .progress {
   background-color: $main-color-light;
-  padding: 0 25px 39px;
-
+  padding-bottom: 39px;
 }
 
 .progress__list {
   @include reset-list;
   transform: translateY(-80px);
   margin-top: -80px;
-  width: 270px;
-  margin: auto;
 }
 
 .progress__item {
@@ -50,7 +47,6 @@
 
 @media (min-width:$tablet-width) {
   .progress__list {
-    width: 688px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -62,9 +58,6 @@
 }
 
 @media (min-width:$desktop-width) {
-  .progress__list {
-    width: 1320px;
-  }
   .progress__item {
     width: 25%;
   }

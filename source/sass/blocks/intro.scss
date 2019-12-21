@@ -11,8 +11,6 @@
   background-repeat: no-repeat;
   background-position: 50% 45%;
   padding: 25px 25px 0;
-  width: 320px;
-  margin: auto;
 }
 
 .intro__title {
@@ -37,9 +35,6 @@
 }
 
 @media (min-width:$tablet-width) {
-  .intro__wrap {
-    width: 768px;
-  }
 
   .intro__title {
     width: 391px;
@@ -65,7 +60,6 @@
 
 @media (min-width:$desktop-width) {
   .intro__wrap {
-    width: 1120px;
     display: flex;
     justify-content: space-between;
   }
