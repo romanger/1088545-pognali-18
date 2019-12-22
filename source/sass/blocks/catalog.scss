@@ -15,12 +15,12 @@
 @media (min-width:$desktop-width) {
   .catalog {
     display: flex;
-    justify-content: space-between;
   }
   .catalog__travelmates {
       order: -1;
       width: 950px;
       padding-top: 24px;
+      margin-right: 85px;
   }
 
   .catalog__filter-by-travelmate {

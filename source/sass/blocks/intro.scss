@@ -10,7 +10,7 @@
   background-image: url(../img/traveller-illustration-mobile@1x.png);
   background-repeat: no-repeat;
   background-position: 50% 45%;
-  padding: 25px 25px 0;
+  padding-top: 25px;
 }
 
 .intro__title {
@@ -61,7 +61,6 @@
 @media (min-width:$desktop-width) {
   .intro__wrap {
     display: flex;
-    justify-content: space-between;
   }
   .intro__title {
     margin-left: 69px;

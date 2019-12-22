@@ -85,7 +85,6 @@
     display: flex;
     position: relative;
     min-height: 602px;
-    justify-content: space-between;
     padding-top: 133px;
     padding-bottom: 134px;
     padding-left: 71px;
@@ -94,6 +93,7 @@
 
   .travelmates__header {
     padding-bottom: 168px;
+    margin-right: 195px;
   }
 
   .travelmates__list {
